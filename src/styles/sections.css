@@ -72,8 +72,16 @@
   border-radius: 999px;
 }
 
+.hero__tagline {
+  margin-top: 0.9rem;
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  font-weight: 700;
+  color: var(--teal-deep);
+  max-width: 36rem;
+}
+
 .hero__intro {
-  margin-top: 1.1rem;
+  margin-top: 0.9rem;
   font-size: 1.05rem;
   max-width: 38rem;
 }
@@ -84,6 +92,39 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+
+/* ---------- Templates ---------- */
+
+.templates h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.templates > p {
+  margin-top: 0.4rem;
+  font-size: 0.92rem;
+  color: var(--teal-deep);
+  max-width: 34rem;
+}
+
+.templates__list {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.template-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--paper-warm);
+  border: var(--border-width) solid var(--ink);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 0.92rem;
 }
 
 /* ---------- Features ---------- */

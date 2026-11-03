@@ -5,9 +5,22 @@
 
 export const APP_COPY = {
   brand: 'Me Ajudaí',
-  tagline: 'O assistente da sua casa e da sua vida',
+  kicker: 'Assistente pessoal',
+  tagline: 'Seu assistente, pras suas coisas e pras pessoas ao seu redor',
   intro:
-    'Divide as contas da casa, lembra das tarefas, cuida das contas fixas e do ciclo contábil do MEI — tudo numa frase, pelo WhatsApp ou pelo app. Sem planilha, sem brigar sobre quem paga o quê.',
+    'Divide contas, organiza tarefas e lembra do que importa — pelo WhatsApp ou pelo app, numa frase. Casa, viagem, república, projeto em grupo: você escolhe o contexto, o assistente cuida do resto.',
+
+  templates: {
+    heading: 'Um assistente, vários contextos',
+    body: 'Comece de um template pronto ou do zero — por baixo é sempre a mesma engine: despesas, tarefas, lembretes.',
+    items: [
+      { icon: '🏠', label: 'Casa' },
+      { icon: '✈️', label: 'Viagem' },
+      { icon: '🎉', label: 'Evento' },
+      { icon: '👥', label: 'Projeto em grupo' },
+      { icon: '🧍', label: 'Só pra você' },
+    ],
+  },
 
   features: {
     heading: 'Tudo o que ele cuida pra você',
@@ -15,7 +28,7 @@ export const APP_COPY = {
       {
         icon: '🤝',
         title: 'Despesas compartilhadas',
-        body: 'Divide contas da casa, república ou viagem automaticamente, com saldo sempre atualizado — ninguém precisa fazer conta de cabeça.',
+        body: 'Divide contas com quem estiver nessa com você — casa, viagem, rolê — com saldo sempre atualizado, sem conta de cabeça.',
       },
       {
         icon: '✅',
@@ -50,7 +63,7 @@ export const APP_COPY = {
       {
         icon: '📱',
         title: 'Leve como um app',
-        body: 'Instala na tela de início do celular, funciona offline e avisa quando alguma coisa muda na casa.',
+        body: 'Instala na tela de início do celular, funciona offline e avisa quando alguma coisa muda no seu espaço.',
       },
     ],
   },
@@ -67,7 +80,7 @@ export const APP_COPY = {
       {
         question: 'Preciso pagar pra usar?',
         answer:
-          'O essencial — dividir contas, organizar tarefas e os lembretes cívicos gratuitos — não custa nada. O plano pago é só pra quem precisa coordenar casa com 3 ou mais pessoas ao mesmo tempo.',
+          'O essencial — dividir contas, organizar tarefas e os lembretes cívicos gratuitos — não custa nada. O plano pago é só pra quem precisa coordenar um grupo de 3 ou mais pessoas ao mesmo tempo.',
       },
       {
         question: 'Preciso instalar algo?',
@@ -77,10 +90,10 @@ export const APP_COPY = {
       {
         question: 'Meus dados ficam seguros?',
         answer:
-          'Sim. Seus dados são só da sua casa — ninguém de fora vê, a gente não vende dado de ninguém, e você pode pedir exportação ou exclusão da conta quando quiser.',
+          'Sim. Seus dados são só do seu espaço — ninguém de fora vê, a gente não vende dado de ninguém, e você pode pedir exportação ou exclusão da conta quando quiser.',
       },
     ],
   },
 
-  footer: 'Feito pra família, república e autônomo que não quer perder tempo organizando a vida.',
+  footer: 'Feito pra quem divide a vida com gente — em casa, numa viagem, num grupo ou sozinho mesmo.',
 } as const;
