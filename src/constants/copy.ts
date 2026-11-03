@@ -4,78 +4,83 @@
  */
 
 export const APP_COPY = {
-  brand: 'Split the Rent',
-  tagline: 'Fair shares for unequal rooms',
+  brand: 'Me Ajudaí',
+  tagline: 'O assistente da sua casa e da sua vida',
   intro:
-    'Type your total rent, describe each room, and watch the shares update live. The working-out is printed in full on the fairness receipt — so nobody argues.',
+    'Divide as contas da casa, lembra das tarefas, cuida das contas fixas e do ciclo contábil do MEI — tudo numa frase, pelo WhatsApp ou pelo app. Sem planilha, sem brigar sobre quem paga o quê.',
 
-  rent: {
-    label: 'Total monthly rent',
-    hint: 'The whole number the landlord charges, before splitting.',
-  },
-
-  rooms: {
-    heading: 'The rooms',
-    nameLabel: 'Room name',
-    sizeLabel: 'Size (m²)',
-    windowLabel: 'Window',
-    ensuiteLabel: 'En-suite bathroom',
-    addRoom: '+ Add a room',
-    removeRoom: 'Remove',
-    maxRoomsNote: 'Up to 6 rooms.',
-    minRoomsNote: 'A flat-share needs at least 2 rooms.',
-  },
-
-  receipt: {
-    heading: 'Fairness receipt',
-    subheading: 'The maths, line by line',
-    baseLine: 'Base share (size)',
-    windowLine: 'Window adjustment',
-    ensuiteLine: 'En-suite adjustment',
-    weightedLine: 'Weighted share',
-    roundingLine: 'Rounding',
-    finalLine: 'Pays per month',
-    ofTotalSize: 'of floor area',
-    totalLabel: 'Total',
-    totalMatches: 'matches the rent exactly',
-    roundingNote:
-      'Shares are rounded to the nearest penny using largest-remainder rounding, so they always add up to the rent — to the penny.',
-    emptyState:
-      'Enter a rent above £0 and give every room a size to see the split.',
-    noEnsuite: 'no en-suite',
-  },
-
-  share: {
-    heading: 'Send it to the group chat',
-    body: 'The whole scenario lives in the link — rent, rooms, everything. Anyone who opens it sees exactly this split.',
-    button: 'Copy share link',
-    copied: 'Link copied!',
-  },
-
-  faq: {
-    heading: 'How it works',
+  features: {
+    heading: 'Tudo o que ele cuida pra você',
     items: [
       {
-        question: 'How is my share calculated?',
-        answer:
-          'Every room gets a weight: its size in m², nudged up or down by its window quality and whether it has an en-suite. Your share of the rent is your room’s weight divided by the total weight of all rooms. The receipt shows every step.',
+        icon: '🤝',
+        title: 'Despesas compartilhadas',
+        body: 'Divide contas da casa, república ou viagem automaticamente, com saldo sempre atualizado — ninguém precisa fazer conta de cabeça.',
       },
       {
-        question: 'Why do the shares always add up exactly?',
-        answer:
-          'Plain rounding can lose or gain a penny or two. We round every share down, then hand the leftover pennies to the rooms whose shares were closest to rounding up — largest-remainder rounding. The total always equals the rent.',
+        icon: '✅',
+        title: 'Tarefas e listas',
+        body: 'Lembra quem faz o quê, com lembrete certo na hora certa, sem depender de ninguém ficar cobrando.',
       },
       {
-        question: 'How do I share this with my flatmates?',
-        answer:
-          'Press “Copy share link”. The rent and every room are encoded in the URL, so the link reopens this exact scenario on any device. No accounts, nothing stored anywhere.',
+        icon: '💰',
+        title: 'Orçamento e contas fixas',
+        body: 'Acompanha o que já foi gasto e nenhuma conta recorrente passa batido.',
+      },
+      {
+        icon: '📋',
+        title: 'Ciclo contábil pra MEI',
+        body: 'Checklist mensal pra quem tem CNPJ não perder prazo de DAS, nota fiscal e declaração.',
+      },
+      {
+        icon: '🎙️',
+        title: 'Fala que a gente entende',
+        body: 'Escreve "mercado 85,40" ou "uber pro trabalho 23,90" numa frase só — a IA cria a despesa ou a tarefa pra você.',
+      },
+      {
+        icon: '💬',
+        title: 'Direto no WhatsApp',
+        body: 'Sem precisar abrir outro app: manda mensagem pro número do assistente e pronto.',
+      },
+      {
+        icon: '🔔',
+        title: 'Lembretes cívicos, de graça',
+        body: 'Bolsa Família, prazo de imposto do MEI, datas de eleição — sem login, sem custar nada, pra qualquer pessoa.',
+      },
+      {
+        icon: '📱',
+        title: 'Leve como um app',
+        body: 'Instala na tela de início do celular, funciona offline e avisa quando alguma coisa muda na casa.',
       },
     ],
   },
 
-  footer: 'Made for flat-shares with one loft, one box room, and one argument to avoid.',
-} as const;
+  cta: {
+    heading: 'Quer testar?',
+    body: 'Ainda estamos em fase inicial, com acesso por convite — manda um oi que a gente te inclui.',
+    button: 'Mandar oi',
+  },
 
-/** Currency formatting used everywhere money is shown. */
-export const CURRENCY_LOCALE = 'en-GB';
-export const CURRENCY_CODE = 'GBP';
+  faq: {
+    heading: 'Perguntas rápidas',
+    items: [
+      {
+        question: 'Preciso pagar pra usar?',
+        answer:
+          'O essencial — dividir contas, organizar tarefas e os lembretes cívicos gratuitos — não custa nada. O plano pago é só pra quem precisa coordenar casa com 3 ou mais pessoas ao mesmo tempo.',
+      },
+      {
+        question: 'Preciso instalar algo?',
+        answer:
+          'Não. Funciona direto no navegador do celular ou computador, e também pelo WhatsApp. Se quiser, dá pra instalar como um appzinho na tela inicial — mas é opcional.',
+      },
+      {
+        question: 'Meus dados ficam seguros?',
+        answer:
+          'Sim. Seus dados são só da sua casa — ninguém de fora vê, a gente não vende dado de ninguém, e você pode pedir exportação ou exclusão da conta quando quiser.',
+      },
+    ],
+  },
+
+  footer: 'Feito pra família, república e autônomo que não quer perder tempo organizando a vida.',
+} as const;
