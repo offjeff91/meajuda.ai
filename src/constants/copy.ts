@@ -14,11 +14,22 @@ export const APP_COPY = {
     heading: 'Um assistente, vários contextos',
     body: 'Comece de um template pronto ou do zero — por baixo é sempre a mesma engine: despesas, tarefas, lembretes.',
     items: [
-      { icon: '🏠', label: 'Casa' },
-      { icon: '✈️', label: 'Viagem' },
-      { icon: '🎉', label: 'Evento' },
-      { icon: '👥', label: 'Projeto em grupo' },
-      { icon: '🧍', label: 'Só pra você' },
+      { icon: '🏠', label: 'Casa', example: 'Divide aluguel, mercado e contas da casa com quem mora com você.' },
+      { icon: '✈️', label: 'Viagem', example: 'Rateia hospedagem, passagem e gastos do grupo sem perder o fio da meada.' },
+      { icon: '🎉', label: 'Evento', example: 'Organiza quem leva o quê e divide o custo da festa ou do churrasco.' },
+      { icon: '👥', label: 'Projeto em grupo', example: 'Divide tarefas e custos de um projeto com outras pessoas, com prazo e responsável.' },
+      { icon: '🧍', label: 'Só pra você', example: 'Organiza suas próprias contas, lembretes e metas, sem compartilhar com ninguém.' },
+    ],
+  },
+
+  profiles: {
+    heading: 'Também se adapta a quem você é',
+    body: 'Além do contexto do grupo, o assistente ajusta o que mostra primeiro de acordo com o seu dia a dia.',
+    items: [
+      { icon: '🧾', label: 'MEI', example: 'Checklist mensal do ciclo contábil: DAS, nota fiscal e declaração, sem esquecer prazo.' },
+      { icon: '💼', label: 'CLT / Autônomo', example: 'Acompanha renda variável e contas fixas no mesmo lugar, sem planilha.' },
+      { icon: '🏛️', label: 'Bolsa Família', example: 'Avisa a data de pagamento pelo seu NIS e lembretes cívicos, de graça, sem precisar de conta.' },
+      { icon: '✨', label: 'Outro', example: 'O essencial de dividir contas e organizar tarefas, do seu jeito.' },
     ],
   },
 

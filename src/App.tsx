@@ -1,5 +1,5 @@
 import { APP_COPY } from './constants/copy';
-import { TemplatesStrip } from './components/TemplatesStrip';
+import { ExampleGrid } from './components/ExampleGrid';
 import { FeatureGrid } from './components/FeatureGrid';
 import { CtaBar } from './components/CtaBar';
 import { FaqSection } from './components/FaqSection';
@@ -21,7 +21,18 @@ export default function App() {
       </header>
 
       <main className="layout-stack">
-        <TemplatesStrip />
+        <ExampleGrid
+          headingId="templates-heading"
+          heading={APP_COPY.templates.heading}
+          body={APP_COPY.templates.body}
+          items={APP_COPY.templates.items}
+        />
+        <ExampleGrid
+          headingId="profiles-heading"
+          heading={APP_COPY.profiles.heading}
+          body={APP_COPY.profiles.body}
+          items={APP_COPY.profiles.items}
+        />
         <FeatureGrid />
         <CtaBar />
         <FaqSection />
