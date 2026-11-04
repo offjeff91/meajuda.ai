@@ -18,19 +18,12 @@ export function ExampleGrid({ heading, body, items, headingId }: ExampleGridProp
       <p>{body}</p>
       <ul className="example-grid__list">
         {items.map((item) => (
-          <li key={item.label}>
-            <a
-              className="example-card"
-              href={`mailto:oi@meajud.ai?subject=${encodeURIComponent(
-                `Quero testar o Me Ajudaí (${item.label})`
-              )}`}
-            >
-              <span className="example-card__icon" aria-hidden="true">
-                {item.icon}
-              </span>
-              <h3>{item.label}</h3>
-              <p>{item.example}</p>
-            </a>
+          <li key={item.label} className="example-card">
+            <span className="example-card__icon" aria-hidden="true">
+              {item.icon}
+            </span>
+            <h3>{item.label}</h3>
+            <p>{item.example}</p>
           </li>
         ))}
       </ul>
