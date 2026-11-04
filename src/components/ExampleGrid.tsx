@@ -16,6 +16,16 @@ export function ExampleGrid({ heading, body, items, headingId }: ExampleGridProp
     <section className="example-grid" aria-labelledby={headingId}>
       <h2 id={headingId}>{heading}</h2>
       <p>{body}</p>
+
+      <ul className="example-grid__chips">
+        {items.map((item) => (
+          <li key={item.label} className="example-chip">
+            <span aria-hidden="true">{item.icon}</span>
+            {item.label}
+          </li>
+        ))}
+      </ul>
+
       <ul className="example-grid__list">
         {items.map((item) => (
           <li key={item.label} className="example-card">
