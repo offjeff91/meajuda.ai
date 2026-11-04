@@ -127,6 +127,20 @@
   padding: 0.4rem 0.9rem;
   font-weight: 700;
   font-size: 0.85rem;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.example-chip:hover,
+.example-chip:focus-visible {
+  background: var(--sun);
+  transform: translateY(-2px);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .example-grid__list {
@@ -145,6 +159,21 @@
   border: var(--border-width) solid var(--ink);
   border-radius: var(--radius-card);
   padding: 1rem 1.1rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.example-card:target {
+  animation: example-card-highlight 1.4s ease;
+}
+
+@keyframes example-card-highlight {
+  0%,
+  100% {
+    background: var(--paper-warm);
+  }
+  25% {
+    background: var(--sun);
+  }
 }
 
 .example-card__icon {
