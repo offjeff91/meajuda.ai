@@ -91,7 +91,7 @@
 .layout-stack {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3.2rem;
 }
 
 /* ---------- Example grids (templates, profiles) ---------- */
@@ -158,6 +158,7 @@ html {
   background: var(--paper-warm);
   border: var(--border-width) solid var(--ink);
   border-radius: var(--radius-card);
+  box-shadow: var(--card-shadow-small);
   padding: 1rem 1.1rem;
   scroll-margin-top: 1.5rem;
 }
